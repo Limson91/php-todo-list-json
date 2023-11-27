@@ -4,7 +4,7 @@ $task_index = $POST['index'] ?? '';
 $response = [];
 
 $todos_json = file_get_contents('./todos.json');
-$todosArray = json_decode($todos-json, true);
+$todosArray = json_decode($todos_json, true);
 $todosArray[$task_index]['done'] = !$todosArray[$task_index]['done'];
 
 $todos_json = json_encode($todosArray);

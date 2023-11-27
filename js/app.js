@@ -35,7 +35,7 @@ createApp({
                 "index": index
             }
 
-            axios.post('./complete.php', data, {
+            axios.post('./task_complete.php', data, {
                 headers: { 'Content-Type': 'multipart/form-data' },
             }).then(res => { this.todos = res.data.results; })
         }
