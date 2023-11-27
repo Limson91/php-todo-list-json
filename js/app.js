@@ -10,7 +10,9 @@ createApp({
 
     methods: {
         fetchTodoArray() {
-            //chiamata axios a server.php
+            axios.get('server.php').then(res => {
+                this.todos = res.data.results;
+            })
         }
     },
 

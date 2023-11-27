@@ -21,7 +21,7 @@
         <section>
             <div class="container">
                 <ul class="todo-list">
-                    <li> <!--v-for todo in todos --> </li>
+                    <li v-for="todo in todos">{{ todo.text }}</li>
                 </ul>
             </div>
         </section>
