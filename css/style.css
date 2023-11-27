@@ -20,3 +20,7 @@ ol,
 menu {
     list-style: none;
 }
+
+.done {
+    text-decoration: line-through;
+}
