@@ -14,7 +14,7 @@
         <section>
             <div class="container">
                 <h2>Your ToDo List!</h2>
-                <input type="text">
+                <input type="text" v-model="newTask" @keyup.enter="addTask">
                 <input type="submit" value="Inserisci task">
             </div>
         </section>
